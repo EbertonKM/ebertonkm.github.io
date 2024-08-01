@@ -1,0 +1,39 @@
+footer { /*footer da página*/
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(to top, rgb(160, 160, 160), rgb(213, 213, 213), rgb(160, 160, 160));
+}
+
+.footer-container { /*container de tudo do footer*/
+    display: flex;
+    position: relative;
+    width: 80%;
+    margin: auto 10%;
+    justify-content: space-between;
+}
+
+.footer-info{ /*texto do footer*/
+    position: relative;
+    top: 35px;
+}
+
+.footer-opt{ /*opções do footer*/
+    position: relative;
+    display: inline;
+    text-transform: uppercase;
+    top: 35px;
+}
+
+.footer-opt > a{ /*cada opção do footer*/
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+.footer-opt > a:hover{
+    color: white;
+    background-color: dimgray;
+    border: 1px solid white;
+}

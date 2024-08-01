@@ -1,0 +1,110 @@
+#mapas-intro{ /*container da intro dos mapas usado apra alinhamento*/
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin-top: 130px;
+    border: 1px solid rgba(72,32,73,255);
+    border-radius: 20px;
+    background-color: rgb(125,85,136);
+}
+
+#petri-info{ /*container da imagem e informações de petrichor*/
+    display: flex;
+    padding: 20px;
+}
+
+#petri-info > dl{ /*tabela das informações de petricore*/
+    padding: 0px 30px;
+    color: white;
+}
+
+#petri-info dt{ /*titulo petrichor*/
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#petri-info dd{ /*descrição petrichor*/
+    padding: 2px;
+}
+
+#petrichor{ /*imagem de petrichor V*/
+    padding: 5px;
+    border-radius: 60px;
+    border: 1px solid rgb(72,32,73);
+}
+
+#fundo{ /*imagem de fundo*/
+    position: fixed;
+    display: block;
+    max-width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+#fundo-mapas{ /*container da lista de fundo das informações*/
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#info-mapas{ /*lista dos mapas*/
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.info{ /*cada bloco de informação + imagem*/
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid rgba(72,32,73,255);
+    border-radius: 20px;
+    background-color: rgb(125,85,136);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-text{ /*cada bloco de texto dos mapas*/
+    position: relative;
+    max-width: 60%;
+    margin: auto 30px;
+}
+
+.info  dt{ /*cada nome do mapa*/
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.info  dd{ /*cada descrição mapa*/
+    font-weight: 500;
+    font-size: 19px;
+    padding: 15px;
+}
+
+.info > img{ /*cada imagem de mapa*/
+    display: inline;
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 10px;
+    width: 320px;
+    height: 200px;
+}
+
+#info-mapas > h1{ /*Sequencia de estágios*/
+    color: white;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: linear-gradient(to right, rgb(125,85,136), rgba(72,32,73,255));
+    border: 1px solid rgba(72,32,73,255);
+    border-radius: 10px;
+}

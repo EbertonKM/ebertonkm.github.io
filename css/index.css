@@ -1,0 +1,113 @@
+video{ /*video do fundo*/
+    width: 100vw;
+    pointer-events: none;
+}
+
+#img-fundo{ /*imagem estática do fundo*/
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    z-index: -1;
+    filter: blur(2px);
+    top: 0px;
+    left: 0px;
+}
+
+#main-video{ /*container do video de fundo*/
+    max-width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.big-logo{ /*container do logo em frente ao video*/
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 80px;
+    width: 70%;
+    margin: 0px auto;
+}
+#big-logo-image{ /*imagem da logo no centro da tela*/
+    width: 100%;
+}
+
+.big-logo > p{ /*tags do jogo abaixo da logo*/
+    display: inline;
+    text-transform: uppercase;
+    margin: auto 20px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(72,32,73,255);
+    filter: opacity(85%);
+}
+
+.logo-play-container{ /*container do botão jogue já abaixo do logo grande*/
+    position: relative;
+    margin-top: 40px;
+}
+
+.logo-play-container > a{ /*botão jogue já abaixo do logo grande*/
+    display: inline;
+    padding: 0px 40px;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    border: 2px solid rgba(72,32,73,255);
+    border-radius: 10px;
+}
+
+#fundo-info-jogo{ /*container da lista de fundo das informações*/
+    position: relative;
+    display: inline-block;
+    margin-top: 250px;
+}
+
+#info-jogo{ /*lista das informações do jogo*/
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.info{ /*cada bloco de informação + imagem*/
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: 1px solid rgba(72,32,73,255);
+    background-color: rgb(125,85,136);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-text{ /*cada bloco de texto das informações*/
+    position: relative;
+    max-width: 60%;
+    margin: auto 30px;
+}
+
+.info  dt{ /*cada item principal das informações*/
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.info  dd{ /*cada descrição das informações*/
+    font-weight: 500;
+    font-size: 19px;
+    padding: 15px;
+}
+
+.info > img{ /*as quatro imagens das informações*/
+    display: inline;
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 10px 60px;
+}

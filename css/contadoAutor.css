@@ -1,0 +1,60 @@
+body >img{ /*imagem fundo*/
+    width: 100%;
+    max-width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+#container-total{ /*container de toda a informação*/
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    top: 120px;
+    background: linear-gradient(to bottom, rgb(125,85,136), rgb(180, 123, 195));
+    border: 1px solid rgb(125,85,136);
+}
+
+h1{ /*titulos*/
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 30%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    background: linear-gradient(to right, transparent, white, white, transparent);
+}
+
+main p{ /*paragrafos*/
+    margin: 0px 20%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: justify;
+}
+
+nav{ /*container de navegação dos links das redes sociais*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav a{ /*links das redes*/
+    max-width: 13%;
+    margin: 0px 15px;
+}
+
+a > img{ /*imagens dentro dos links das redes*/
+    max-width: 100%;
+}
+
+
+main img:hover{ /*animação quando passar o mouse nas redes sociais*/
+    transform: scale(1.05);
+    transition: transform 0.1s ease-in-out;
+}

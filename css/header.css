@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* img{
+    user-select: none;
+}
+
+a, a:visited { /*remove a mudança de cor e sublinhado de links já visitados*/
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+    line-height: 1.25;
+}
+
+#ic-ror{ /*icone do ROR*/
+    height: 50px;
+    display: inline;
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+    left: 5px;
+    top: 2px;
+    background-color: white;
+    border: 1px solid rgba(72,32,73,255);
+}
+
+#ic-ror:hover{
+    background: gray;
+    filter: brightness(1);
+    transform: scale(1.05);
+    transition: filter 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+header{ /*todo o cabeçalho (parte roxa)*/
+    width: 99%;
+    left: 10px;
+    height: 65px;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(72,32,73,255), rgb(125,85,136));
+    border: 1px solid rgb(125,85,136);
+    border-radius: 10px;
+    margin: 10px auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-buttons{ /*container de todos os botões*/
+    display: inline;
+    position: fixed;
+    margin: 10px;
+    top: 25px;
+    right: 10px;
+}
+
+.header-buttons > a{ /*cada botão*/
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid rgba(72,32,73,255);
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 10px;
+}
+
+.header-opt{ /*containers das opções*/
+    display: inline;
+    position: fixed;
+    margin: 10px;
+    top: 25px;
+}
+
+.header-opt > a{ /*cada opção*/
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid rgba(72,32,73,255);
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 10px;
+}
+
+header a{ /*todos os <a> do header*/
+    font-weight: 600;
+}
+
+header div a:hover, #selecionavel:hover{
+    color: white;
+    border-color: white;
+    background-color: dimgray;
+}

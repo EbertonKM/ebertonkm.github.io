@@ -1,0 +1,137 @@
+#fundo{ /*imagem de fundo*/
+    display: inline-block;
+    position: fixed;
+    max-width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    filter: blur(2px);
+}
+
+#container-sobreviventes{
+    position: relative;
+    display: inline-block;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+}
+
+nav{ /*nav da tabela dos sobrevivmentes*/
+    display: flex;
+    justify-content: center;;
+}
+
+nav table{ /*tabela em si*/
+    position: relative;
+    border-collapse: collapse;
+}
+
+tr img{ /*imagens da tabela*/
+    display: block;
+    padding: 0px;
+    margin: 0px 0px;
+    background: radial-gradient(circle, rgb(72,32,73), rgb(125,85,136));
+}
+
+nav td{ /*todas as celulas em nav*/
+    border: 2px solid rgb(72,32,73);
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+#nomes{ /*cada celula dos nomes dos sobreviventes*/
+    background-color: rgb(125,85,136);
+    color: white;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+#nomes td{ /*todos os textos da primeira linha da tabela*/
+    padding: 5px 10px;
+}
+
+tr img:hover{ /*hover icones da tabela*/
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    transition: filter 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.todos-sobrev-container{ /*div com todas as sections*/
+    display: block;
+    position: relative;
+    justify-content: center;
+}
+
+.todos-sobrev-container > section{ /*cada seção individual*/
+    display: block;
+    max-width: 90%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid rgba(72,32,73,255);
+    border-radius: 20px;
+    background-color: rgb(125,85,136);
+    color: white;
+    scroll-margin: 100px;
+}
+
+.icone-imagem-sobrev{ /*container com o icone e imagem de cada sobrevivente*/
+    display: flex;
+    align-items: center;
+}
+
+.todos-sobrev-container > section > div > img{ /*todos as fotos dos sobreviventes (icones próximo dos nomes)*/
+    margin-left: 10px;
+    border: 2px solid white;
+}
+
+.todos-sobrev-container > section > .icone-imagem-sobrev > h1{ /*todos os nomes dos sobreviventes*/
+    width: 95%;
+    padding: 7px 0px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-left: none;
+    border-top-right-radius: 20px;
+    font-size: 25px;
+}
+
+.habilidades{ /*container das habilidades*/
+    display: flex;
+    justify-content: space-between;
+    margin:0px 10px;
+    border: 2px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.habilidade-desc > h1{ /*título de cada habilidade*/
+    text-align: center;
+    line-height: 0.85;
+    padding-bottom: 8px;
+}
+
+.habilidade-desc{ /*container da descrição de cada habilidade*/
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.habilidade-desc > p{ /*descrição de cada habilidade*/
+    line-height: 1;
+    font-size: 16px;
+    text-align: center;
+}
+
+.habilidade-desc > img{ /*icone de cada habilidade*/
+    position: relative;;
+    display: block;
+    margin: 5px auto;
+}
