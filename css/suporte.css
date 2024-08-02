@@ -15,7 +15,7 @@ main > img{ /*imagem de fundo*/
     left: 20%;
     border-radius: 20px;
     border: 2px solid rgba(72,32,73,255);
-    background-color: rgb(125,85,136);
+    background: linear-gradient(to bottom, rgb(125,85,136), rgb(180, 123, 195));
     font-weight: 500;
 }
 
