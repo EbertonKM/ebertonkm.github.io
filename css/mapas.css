@@ -37,7 +37,8 @@
 #fundo{ /*imagem de fundo*/
     position: fixed;
     display: block;
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     left: 0px;
     top: 0px;
     z-index: -1;
